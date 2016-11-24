@@ -1,0 +1,6 @@
+c:\users\fabien\documents\visual studio 2013\Projects\Coventry Lab 1\Coventry Lab 1\bin\Debug\Coventry Lab 1.exe.config
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\Coventry Lab 1\Coventry Lab 1\bin\Debug\Coventry Lab 1.exe
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\Coventry Lab 1\Coventry Lab 1\bin\Debug\Coventry Lab 1.pdb
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\Coventry Lab 1\Coventry Lab 1\obj\Debug\Coventry Lab 1.csprojResolveAssemblyReference.cache
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\Coventry Lab 1\Coventry Lab 1\obj\Debug\Coventry Lab 1.exe
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\Coventry Lab 1\Coventry Lab 1\obj\Debug\Coventry Lab 1.pdb

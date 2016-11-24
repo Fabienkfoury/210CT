@@ -1,0 +1,12 @@
+c:\users\fabien\documents\visual studio 2013\Projects\Week 4\Week 4\bin\Debug\Week 4.exe.config
+c:\users\fabien\documents\visual studio 2013\Projects\Week 4\Week 4\bin\Debug\Week 4.exe
+c:\users\fabien\documents\visual studio 2013\Projects\Week 4\Week 4\bin\Debug\Week 4.pdb
+c:\users\fabien\documents\visual studio 2013\Projects\Week 4\Week 4\obj\Debug\Week 4.csprojResolveAssemblyReference.cache
+c:\users\fabien\documents\visual studio 2013\Projects\Week 4\Week 4\obj\Debug\Week 4.exe
+c:\users\fabien\documents\visual studio 2013\Projects\Week 4\Week 4\obj\Debug\Week 4.pdb
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 4\Week 4\bin\Debug\Week 4.exe.config
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 4\Week 4\obj\Debug\Week 4.exe
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 4\Week 4\obj\Debug\Week 4.pdb
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 4\Week 4\bin\Debug\Week 4.exe
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 4\Week 4\bin\Debug\Week 4.pdb
+C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 4\Week 4\obj\Debug\Week 4.csprojResolveAssemblyReference.cache

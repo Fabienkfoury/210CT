@@ -1,0 +1,6 @@
+c:\users\fabien\documents\visual studio 2013\Projects\Week 3\Week 3\bin\Debug\Week 3.exe.config
+C:\Users\Fabien\documents\visual studio 2013\Projects\Week 3\Week 3\bin\Debug\Week 3.exe
+C:\Users\Fabien\documents\visual studio 2013\Projects\Week 3\Week 3\bin\Debug\Week 3.pdb
+C:\Users\Fabien\documents\visual studio 2013\Projects\Week 3\Week 3\obj\Debug\Week 3.csprojResolveAssemblyReference.cache
+C:\Users\Fabien\documents\visual studio 2013\Projects\Week 3\Week 3\obj\Debug\Week 3.exe
+C:\Users\Fabien\documents\visual studio 2013\Projects\Week 3\Week 3\obj\Debug\Week 3.pdb

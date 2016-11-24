@@ -1,0 +1,6 @@
+c:\users\fabien\documents\visual studio 2013\Projects\Week 2_Real\Week 2_Real\bin\Debug\Week 2_Real.exe.config
+c:\users\fabien\documents\visual studio 2013\Projects\Week 2_Real\Week 2_Real\bin\Debug\Week 2_Real.exe
+c:\users\fabien\documents\visual studio 2013\Projects\Week 2_Real\Week 2_Real\bin\Debug\Week 2_Real.pdb
+c:\users\fabien\documents\visual studio 2013\Projects\Week 2_Real\Week 2_Real\obj\Debug\Week 2_Real.csprojResolveAssemblyReference.cache
+c:\users\fabien\documents\visual studio 2013\Projects\Week 2_Real\Week 2_Real\obj\Debug\Week 2_Real.exe
+c:\users\fabien\documents\visual studio 2013\Projects\Week 2_Real\Week 2_Real\obj\Debug\Week 2_Real.pdb
