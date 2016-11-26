@@ -7,3 +7,6 @@ c:\users\fabien\documents\visual studio 2013\Projects\Week 5\Week 5\obj\Debug\We
 C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 5\Week 5\bin\Debug\Week 5.exe.config
 C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 5\Week 5\obj\Debug\Week 5.exe
 C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 5\Week 5\obj\Debug\Week 5.pdb
+\\coventry\csv\Students\Personal\f\kfouryf\Visual Studio 2015\Projects\210CT\Week 5\Week 5\bin\Debug\Week 5.exe.config
+\\coventry\csv\Students\Personal\f\kfouryf\Visual Studio 2015\Projects\210CT\Week 5\Week 5\obj\Debug\Week 5.exe
+\\coventry\csv\Students\Personal\f\kfouryf\Visual Studio 2015\Projects\210CT\Week 5\Week 5\obj\Debug\Week 5.pdb

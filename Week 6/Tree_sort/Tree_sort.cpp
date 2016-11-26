@@ -61,7 +61,7 @@ void in_order(BinTreeNode* tree)
 
 	stack <BinTreeNode*> s  ;
 	s.push(tree);
-	tree = tree->left;
+	//tree = tree->left;
 
 	while (!s.empty())			// we go throw the stack until it gets empty
 	{
@@ -70,19 +70,29 @@ void in_order(BinTreeNode* tree)
 			s.push(tree);			// if its not NULL we add it to the top of the stack
 			tree = tree->left;		// And we say that the new node is the left one
 		}
-		else  
+		else  if(tree->left == NULL)
 		{							// if the left node is empty, then we display the node value
 			s.push(tree);
-			std::cout << s.top()->value << std::endl;;
+		
+			std::cout << s.top()->value << std::endl;
 			s.pop();
-			if ( tree->right != NULL)
+			
+			if (tree->right != NULL)
 			{
+				
 				tree = tree->right;
 			}
-			else{
-				std::cout << s.top()->value << std::endl;;
+			else 
+			{
+				tree->value = s.top()->value;
+				std::cout << s.top()->value << std::endl;
 				s.pop();
+				
+				
 			}
+			
+			
+			//s.pop();
 			
 			// And tell to check the same on the right node
 		}
