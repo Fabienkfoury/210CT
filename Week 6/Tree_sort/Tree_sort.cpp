@@ -73,13 +73,11 @@ void in_order(BinTreeNode* tree)
 		else  if(tree->left == NULL)
 		{							// if the left node is empty, then we display the node value
 			s.push(tree);
-		
 			std::cout << s.top()->value << std::endl;
 			s.pop();
 			
 			if (tree->right != NULL)
 			{
-				
 				tree = tree->right;
 			}
 			else 
@@ -87,12 +85,9 @@ void in_order(BinTreeNode* tree)
 				tree->value = s.top()->value;
 				std::cout << s.top()->value << std::endl;
 				s.pop();
-				
-				
+			
 			}
 			
-			
-			//s.pop();
 			
 			// And tell to check the same on the right node
 		}

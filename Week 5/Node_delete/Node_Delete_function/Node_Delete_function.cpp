@@ -58,7 +58,6 @@ public:
 	void insert(Node* n, Node* x){
 		std::cout << "insert node " << x << std::endl;
 
-		//Not actually perfect: how do we prepend to an existing list?
 		if (n != 0 ){					// (head)--><--(n)-><--(x)--><--(tail)
 										// x is the node just after n
 			x->next = n->next;
