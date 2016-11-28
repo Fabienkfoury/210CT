@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <stack>
+#include <Windows.h>
 using namespace std;
 
 class BinTreeNode{
@@ -60,41 +61,71 @@ void in_order(BinTreeNode* tree)
 {
 
 	stack <BinTreeNode*> s  ;
-	s.push(tree);
+	//tree = s.top();
+	//s.push(tree);
 	//tree = tree->left;
 
-	while (!s.empty())			// we go throw the stack until it gets empty
-	{
-		if (tree->left != NULL)		// then we check the left node
-		{
-			s.push(tree);			// if its not NULL we add it to the top of the stack
-			tree = tree->left;		// And we say that the new node is the left one
+	while (!s.empty() )				
+	{		
+		//cout << "CurrentNode: " << tree->value << endl;
+		//cout << "  Stack back: " << s.top()->value << endl;
+	
+		if (tree->left != NULL) {
+			s.push(tree->left);
+			tree = tree->left;
+			
 		}
-		else  if(tree->left == NULL)
-		{							// if the left node is empty, then we display the node value
-			s.push(tree);
+		else if (tree->left == NULL)
+		{
 			std::cout << s.top()->value << std::endl;
 			s.pop();
-			
-			if (tree->right != NULL)
-			{
-				tree = tree->right;
-			}
-			else 
-			{
-				tree->value = s.top()->value;
-				std::cout << s.top()->value << std::endl;
-				s.pop();
-			
-			}
-			
-			
-			// And tell to check the same on the right node
+			tree = tree->right;
 		}
-		
-		
 	}
+
+		/*if (currentNode->left != NULL )
+		{
+			s.push(currentNode->left);
+			
+		}
+		else if (currentNode->right != NULL )
+		{
+			s.push(currentNode->right);
+			
+		}
+		else 
+			s.pop();
+
+		Sleep(1000);
+		*/
+
+		/*if (tree->left != NULL)		// then we check the left node
+		{
+			s.push(tree->left);			// if its not NULL we add it to the top of the stack
+			//tree = tree->left;		// And we say that the new node is the left one
+		}
+		else  if (tree->left == NULL)
+		{							// if the left node is empty, then we display the node value
+			//s.push(tree);
+			std::cout << s.top()->value << std::endl;
+			s.pop();
+			tree = tree->right;
+		}
+		/*if (tree->right != NULL)
+		{
+			//s.push(currentNode->right);
+			tree = tree->right;
+		}
+		else if (tree->right == NULL)
+		{
+			tree->value = s.top()->value;
+			std::cout << s.top()->value << std::endl;
+			s.pop();
+		}
+		*/
+		
 }
+
 
 int main(int argc, char *argv[])
 {
