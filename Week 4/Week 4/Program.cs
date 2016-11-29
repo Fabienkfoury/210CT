@@ -10,8 +10,8 @@ namespace Week_4
     {
         static void Main(string[] args)
         {
-            int[] Sorted_Array = { 2, 3, 5, 7, 9,13  };
-            Console.WriteLine(Binary_Search(10,14, Sorted_Array));
+            int[] Sorted_Array = { 2, 3, 5, 7, 9, 13  };
+            Console.WriteLine(Binary_Search(1,1, Sorted_Array));
             //Binary_Search(5,Sorted_Array);
             Console.ReadLine();
         }
