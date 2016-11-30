@@ -10,14 +10,14 @@ namespace Week_3
     {
         static void Main(string[] args)
         {
-            //Reverse("je suis fou .");
+            Reverse("je suis fou");
             //Console.Write(Prime(10));
             string word="beautiful";
             string [] input=new string[word.Length-1];
             int i=0;
             int j = 0;
 
-            Voyel(word, input, i,j);
+            //Voyel(word, input, i,j);
             Console.ReadLine();
         }
 
@@ -30,16 +30,13 @@ namespace Week_3
             *  wordsArray <- [lenght(chaine)];
             *  j<-0;
             *  WordCompteur<-0
-            *  SentenceEnd <- False;
-         *  
-            *   While(SentenceEnd equal false)
-            *        While(chaine[j] not a space AND chaine[j] not a dot)
+            *  
+            *   While(j not equal to lenght(chaine) )
+            *        While(chaine[j] not a space )
             *           word[WordCompteur] = word[WordCompteur] + chaine[j];
          *           if (chaine[j] equal to a space)
          *              j<-j+1;
          *           WordCompteur++;
-         *           if (chaine[j] equal to a dot)
-         *              SentenceEnd<- True;
          *              
          *      for (i<-0 to lenght(wordsArray) )
          *          tempo <- wordsArray[i];
@@ -47,48 +44,44 @@ namespace Week_3
          *          wordsArray[lenght(wordsArray)-i] <- tempo;
          
             */
-        static void Reverse(string sentence)
-        {
-            string[]chaine =new string [sentence.Length];                               // (1)
-            int j = 0;                                                                  // (1)
-            bool SentenceEnd = false;                                                   // (1)
-            int WordCompteur = 0;                                                       // (1)
+            static void Reverse(string sentence)
+            {
+                string[]chaine =new string [sentence.Length];                  // (1)
+                int j = 0;                                                  // (1)                                                   
+                int WordCompteur = 0;                                         // (1)
 
-                while (!SentenceEnd)                                                    // (N)
-                {
-                    while ( (sentence[j] != ' ') && (sentence[j] != '.' ) )             // (NN)
+                    while (j != sentence.Length)                          // (N)
                     {
-                        chaine[WordCompteur] = chaine[WordCompteur] + sentence[j];      // (NN)
-                        j++;                                                            // (NN)
-                        
-                    }   
-                    WordCompteur++;                                                     // (N)
-                    if(sentence[j]==' ')                                                // (N)
-                    {
-                        j = j + 1;                                                      // (N)
-                        
-                    }
+                            while ((sentence[j] != ' ') )                      // (NN)
+                            {
+                                chaine[WordCompteur] = chaine[WordCompteur] + sentence[j]; // (NN)
+                                j++;                                          // (NN)
+                                if (j == sentence.Length)                    // (NN)
+                                {
+                                    break;                             // (NN)
+                                }
+                            }
 
-                    if (sentence[j] == '.')                                             // (N)
-                    {
-                        SentenceEnd = true;                                             // (N)
+                            if (j == sentence.Length)                    // (N)
+                            {
+                                break;                                  // (N)
+                            }
+
+                            WordCompteur++;                               // (N)
+                            if (sentence[j] == ' ')                     // (N)
+                            {
+                                j = j + 1;                               // (N)
+
+                            }
                     }
-                }
                      
-            Console.WriteLine("There are " + WordCompteur +" words");                   // (1)
+                Console.WriteLine("There are " + WordCompteur +" words"); // (1)
 
-            for (int i = 1; i < WordCompteur;i++ )                                      // (N)
-            {
-                string tmp = chaine[i-1];                                               // (N)
-                chaine[i - 1] = chaine[WordCompteur - i];                               // (N)
-                chaine[WordCompteur - i] = tmp;                                         // (N)
-            }
-
-            for (int i = 0; i < WordCompteur; i++)                                      // (N)
-            {
-                Console.Write(chaine[i] + " ");                                         // (N)
-            }
-        }   
+                for (int i = WordCompteur; i >= 0; i--)                      // (N)
+                {
+                    Console.Write(chaine[i] + " ");                            // (N)
+                }
+            }   
 
         static bool Prime(int n,int i)
         {
