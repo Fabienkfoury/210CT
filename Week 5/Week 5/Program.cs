@@ -10,7 +10,7 @@ namespace Week_5
     {
         static void Main(string[] args)
         {
-            int[] tab = { 6, 5, 9, 7, 2 , 4, 5, 7 };
+            int[] tab = { 6, 5, 9, 10, 2 , 6, 5, 7 };
             Sub_Sequence(tab);
             
             Console.ReadLine();
@@ -25,13 +25,9 @@ namespace Week_5
             for (int i = 1; i < tab.Length; i++)
             {
                 int length = i - start; 
-                if (tab[i] < tab[i - 1])                    // Si le nombre d'apés est inférieur au nombre d'avant alors on rentre dans la boucle 
+                if (tab[i] < tab[i - 1])                    
                 {
                     Console.WriteLine(start + " to " + i);
-
-                                 // i est implémté à chaque fois alors que start à chaque fois qu'on rentre dans la boucle 
-
-
                     if (length > longestlength)
                     {
                         longestlength = length;
@@ -46,11 +42,12 @@ namespace Week_5
                 }
                 
             }
-            Console.WriteLine("Affichage");
+            /*Console.WriteLine("Affichage");
             Console.WriteLine(longestlength);
             Console.WriteLine(longestlengthstart);
+             **/
 
-            for (int i = longestlengthstart; i <= longestlength + longestlengthstart; i++)
+            for (int i = longestlengthstart; i < longestlength + longestlengthstart; i++)
             {
                 Console.Write(tab[i] + " ");
             }

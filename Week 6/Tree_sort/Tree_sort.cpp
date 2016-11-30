@@ -47,83 +47,29 @@ void postorder(BinTreeNode* tree){
 
 }
 
-/*void in_order(BinTreeNode* tree){
-	if (tree->left != NULL)
-		in_order(tree->left);
-	std::cout << tree->value << std::endl;
-	if (tree->right != NULL)
-		in_
-		order(tree->right);
-}
-*/
-
 void in_order(BinTreeNode* tree)
 {
-
 	stack <BinTreeNode*> s  ;
-	//tree = s.top();
-	//s.push(tree);
-	//tree = tree->left;
+	s.push(tree);						// To enter into the loop
 
-	while (!s.empty() )				
-	{		
-		//cout << "CurrentNode: " << tree->value << endl;
-		//cout << "  Stack back: " << s.top()->value << endl;
-	
-		if (tree->left != NULL) {
-			s.push(tree->left);
-			tree = tree->left;
-			
+	while (!s.empty() )
+	{			
+		if (tree != NULL) {				// check if its empty
+			s.push(tree);
+			tree = tree->left;			// go the the left node
 		}
-		else if (tree->left == NULL)
-		{
-			std::cout << s.top()->value << std::endl;
-			s.pop();
-			tree = tree->right;
-		}
+		else
+			if (tree == NULL  )			// if empty, root change ,pop it from the stack and display it 
+			{
+				tree = s.top();
+				std::cout << s.top()->value << std::endl;
+				s.pop();
+				tree = tree->right;
+			}
+
 	}
+	
 
-		/*if (currentNode->left != NULL )
-		{
-			s.push(currentNode->left);
-			
-		}
-		else if (currentNode->right != NULL )
-		{
-			s.push(currentNode->right);
-			
-		}
-		else 
-			s.pop();
-
-		Sleep(1000);
-		*/
-
-		/*if (tree->left != NULL)		// then we check the left node
-		{
-			s.push(tree->left);			// if its not NULL we add it to the top of the stack
-			//tree = tree->left;		// And we say that the new node is the left one
-		}
-		else  if (tree->left == NULL)
-		{							// if the left node is empty, then we display the node value
-			//s.push(tree);
-			std::cout << s.top()->value << std::endl;
-			s.pop();
-			tree = tree->right;
-		}
-		/*if (tree->right != NULL)
-		{
-			//s.push(currentNode->right);
-			tree = tree->right;
-		}
-		else if (tree->right == NULL)
-		{
-			tree->value = s.top()->value;
-			std::cout << s.top()->value << std::endl;
-			s.pop();
-		}
-		*/
-		
 }
 
 
@@ -137,7 +83,7 @@ int main(int argc, char *argv[])
 	tree_insert(t, 4);
 	tree_insert(t, 11);
 	in_order(t);
-	//postorder(t);
+
 	return 0;
 }
 

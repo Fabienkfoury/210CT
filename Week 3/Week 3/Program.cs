@@ -10,8 +10,8 @@ namespace Week_3
     {
         static void Main(string[] args)
         {
-            //Reverse("Bonjour mecredi vendredi.");
-            //Console.Write(Prime(6));
+            //Reverse("je suis fou .");
+            //Console.Write(Prime(10));
             string word="beautiful";
             string [] input=new string[word.Length-1];
             int i=0;
@@ -92,16 +92,16 @@ namespace Week_3
 
         static bool Prime(int n,int i)
         {
-            if (n == i)                 // (N)
-                return true;            // (N)
-            else if (n % i != 0)        // (N)
-                return false;           // (N)
+            if (n == i)                 
+                return true;           
+            else if (n % i == 0)        
+                return false;           
             
-            return Prime(n, i + 1);    // (N)
+            return Prime(n, i + 1);    
         }   
         static bool Prime(int n)
         {
-             return Prime(n, 2);         // (1)
+             return Prime(n, 2);         
         }
          
         static bool Voyel(string Word,string []input,int i,int j)

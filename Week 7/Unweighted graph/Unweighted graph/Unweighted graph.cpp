@@ -6,6 +6,7 @@
 using namespace std;       
 #include <list>           
 #include <queue>
+#include <fstream>
 #include <stack>
 
 
@@ -88,7 +89,7 @@ list <int> DFS(MyGraph *G, Vertice *V)			//DEPTH FIRST SEARCH
 			//{
 			for (int j = G->n; j >0 ; j--)
 				{
-					if (V->edges[u][j] && !pushed)			// we start from j = n because its a stack, so it will alway start from the top
+					if (V->edges[u][j])			// we start from j = n because its a stack, so it will alway start from the top
 															// the probleme was that if a vertice has a least 2 edges, the second edge will come on the top of the stack
 															// instead of the first one
 					{
@@ -135,6 +136,7 @@ list <int> BFS(MyGraph *G, Vertice *V)			//BREADTH FIRST SEARCH
 	}
 	return visited;
 }
+
 
 
 int main()
@@ -194,7 +196,38 @@ int main()
 	std::cout << "DFS" << std::endl;
 	for (iterator = resultDFS.begin() = resultDFS.begin(); iterator != resultDFS.end(); iterator++)
 		cout << *iterator << " ";
+
+	//ofstream outputfile ("Data.txt");
+	//outputfile << "hey";
+	//outputfile.open("Data.txt");
+	
+
+	/*outputfile << "BFS" << std::endl;
+	for (iterator = resultBFS.begin() = resultBFS.begin(); iterator != resultBFS.end(); iterator++)
+		outputfile << *iterator << " ";
+
+	outputfile << "" << std::endl;
+	outputfile << "DFS" << std::endl;
+	for (iterator = resultDFS.begin() = resultDFS.begin(); iterator != resultDFS.end(); iterator++)
+		outputfile << *iterator << " ";
+		*/
 		
+	fstream outputfile("data.txt"); 
+	if (outputfile.is_open())
+	{
+		
+		cout << "File Opened successfully." << endl;
+
+		for (int i = 0; i< 10; i++)
+		{
+			outputfile << i; 
+		}
+		cout << "Array data successfully saved" << endl;
+	}
+	else 
+	{
+		cout << "File could not be opened." << endl;
+	}
     return 0;
 }
 

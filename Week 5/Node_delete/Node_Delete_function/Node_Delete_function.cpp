@@ -78,25 +78,25 @@ public:
 	}
 
 	void remove(Node* n)
-	{										// n is the node we want to delete 
+	{											// n is the node we want to delete 
 		std::cout << "remove node " << n << std::endl;
 
 		if (n != 0 && this->head != n && this->tail != n)
 		{
-			std::cout << "Not the head and not the tail " << n << std::endl;
+			//std::cout << "Not the head and not the tail " << n << std::endl;
 			n->next->prev = n->prev;
 			n->prev->next = n->next;
 		}
 
 		if (this->head == n)
 		{
-			std::cout << " HEAD " << n << std::endl;
+			//std::cout << " HEAD " << n << std::endl;
 			this->head = n->next;
 		}
 
 		else if (this->tail == n)
 		{
-			std::cout << " TAIL " << n << std::endl;
+			//std::cout << " TAIL " << n << std::endl;
 			n->prev->next = 0;
 			this->tail = n->prev;
 		}
@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
 	l->insert(l->head, new Node(6));
 	l->insert(l->head, new Node(8));
 	l->display();
-	l->remove(l->find(8));
+	l->remove(l->find(4));
 	l->display();
 
 	delete l;

@@ -13,34 +13,31 @@ namespace Week_2_Real
             //Console.Write(Perfect_Square(16));
 
             int a = 2;
-            int[,] A = { {1,2 },{3,4} };
-            int[,] B = { {5,6 },{7,8} };
+            int[,] B = { {1,2 },{1,2} };            
+            int[,] C = { {1,1 },{1,2} };
 
-            Matrix_Operations(A, B);
-            Affichage(Matrix_Operations(A, B));
+            Matrix_Operations(B, C);
+            Affichage(Matrix_Operations(B, C));
 
             Console.ReadLine();
         }
 
 
-        ////////// PSEUDOCODE \\\\\\\\\\\
+                                        ////////// PSEUDOCODE \\\\\\\\\\\
 
         /* 1 : Write the pseudocode for a function which returns the highest perfect square which is less or equal to
            its parameter (a positive integer). Implement this in the programming language of your choice*/
         /*
          *  PERFECT SQUARE(parametre)
          *     
-             * Racine <- root of parametre:
+             * Racine <- square root of parametre:
              * i <- 1:
              * 
-             * while (Racine%1 != 0)     
+             * while (Racine %1 != 0)     
              *      Racine <- root of parametre-i;
              *      i<-i+1;
              * 
              * Write Racine;
-         * 
-         * 
-         *
          */
 
         static double Perfect_Square(double parametre)
@@ -56,7 +53,7 @@ namespace Week_2_Real
                 i++;                                // N
             }
             return Racine;                          //1
-        }                                          // --> 3N+3  --> O(N)
+        }                                           // --> 3N+3  --> O(N)
 
 
         /*2. Look back at last week’s tasks. Describe the run-time bounds of these algorithms using the BigO

@@ -11,8 +11,8 @@ namespace Week_2
         static void Main(string[] args)
         {
             //Task1();
-            //Task1Bis();
-           //Task2();
+            //ShuffleArray();
+           //Trailling0();
             //Fact2();
             //Alien();
             int DimI = 3;
@@ -21,7 +21,7 @@ namespace Week_2
             int[,] Matrix = new int[DimI, DimJ];
             int[,] Matrix2 = new int[DimI, DimJ];
 
-            SparseMatrix(Matrix,Matrix2,DimI,DimJ);
+           // SparseMatrix(Matrix,Matrix2,DimI,DimJ);
             Console.ReadLine();
         }
 
@@ -70,7 +70,7 @@ namespace Week_2
             }
         }
 
-        static void Task1Bis()
+        static void ShuffleArray()
         {
             int[] tab = { 5, 3, 8, 6, 1, 9, 2, 7 };
             Console.WriteLine("Here is an array");
@@ -96,9 +96,9 @@ namespace Week_2
                 Console.Write(tab[i]);
             }
 
-        } // Permutation aléatoire 
+        } 
 
-        static int Fact(int number) // Factoriel in recursif
+        static int Fact(int number) 
         {
             if(number==0 )
             {
@@ -111,7 +111,7 @@ namespace Week_2
 
         }
 
-        static void Fact2() // Factoriel en normale
+        static void Fact2() 
         {
             Console.WriteLine("Enter a number");
             int number = Convert.ToInt32(Console.ReadLine());
@@ -132,7 +132,7 @@ namespace Week_2
             Console.Write(result);
         }
 
-        static void Task2() //On regarde si le nombre modulo 5 est égale à 0, si oui on rajoute +1 à l'output et on continue en divisant par 5 le nombre initial
+        static void Trailling0() 
         {
             Console.WriteLine("Enter a number");
             int number = Convert.ToInt32(Console.ReadLine());
@@ -185,7 +185,8 @@ namespace Week_2
             int Rand1 = rand.Next(0, DimJ);
             int Rand2 = rand.Next(1, 9);
 
-            for (int i = 0; i < DimI; i++)  // Implémentation of the first matrice
+            // Implémentation of the first matrice
+            for (int i = 0; i < DimI; i++)  
             {
                 for(int j = 0; j < DimJ; j++)
                 {
