@@ -51,9 +51,10 @@ void in_order(BinTreeNode* tree)
 {
 	stack <BinTreeNode*> s  ;
 	s.push(tree);						// To enter into the loop
+	tree = tree->left;					
 
-	while (!s.empty() )
-	{			
+	while (!s.empty() || tree )			// tree != NULL
+	{		
 		if (tree != NULL) {				// check if its empty
 			s.push(tree);
 			tree = tree->left;			// go the the left node
@@ -66,10 +67,7 @@ void in_order(BinTreeNode* tree)
 				s.pop();
 				tree = tree->right;
 			}
-
 	}
-	
-
 }
 
 

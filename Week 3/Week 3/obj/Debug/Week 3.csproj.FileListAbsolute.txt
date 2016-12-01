@@ -10,3 +10,9 @@ C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 3\Week 3\obj\De
 C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 3\Week 3\bin\Debug\Week 3.exe
 C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 3\Week 3\bin\Debug\Week 3.pdb
 C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 3\Week 3\obj\Debug\Week 3.csprojResolveAssemblyReference.cache
+\\coventry\csv\Students\Personal\f\kfouryf\Visual Studio 2015\Projects\210CT\Week 3\Week 3\bin\Debug\Week 3.exe.config
+\\coventry\csv\Students\Personal\f\kfouryf\Visual Studio 2015\Projects\210CT\Week 3\Week 3\obj\Debug\Week 3.exe
+\\coventry\csv\Students\Personal\f\kfouryf\Visual Studio 2015\Projects\210CT\Week 3\Week 3\obj\Debug\Week 3.pdb
+\\coventry\csv\Students\Personal\f\kfouryf\Visual Studio 2015\Projects\210CT\Week 3\Week 3\bin\Debug\Week 3.exe
+\\coventry\csv\Students\Personal\f\kfouryf\Visual Studio 2015\Projects\210CT\Week 3\Week 3\bin\Debug\Week 3.pdb
+\\coventry\csv\Students\Personal\f\kfouryf\Visual Studio 2015\Projects\210CT\Week 3\Week 3\obj\Debug\Week 3.csprojResolveAssemblyReference.cache

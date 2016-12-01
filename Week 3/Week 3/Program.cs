@@ -10,8 +10,8 @@ namespace Week_3
     {
         static void Main(string[] args)
         {
-            Reverse("je suis fou");
-            //Console.Write(Prime(10));
+            //Reverse("je suis fou");
+            //Console.Write(Prime(17));
             string word="beautiful";
             string [] input=new string[word.Length-1];
             int i=0;

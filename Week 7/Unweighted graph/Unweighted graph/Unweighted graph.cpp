@@ -37,8 +37,6 @@ public:
 		}
 	}
 
-
-
 	~Vertice() {
 		std::cout << "Graph destructor" << std::endl;
 	}
@@ -69,8 +67,6 @@ public :
 
 
 
-
-
 list <int> DFS(MyGraph *G, Vertice *V)			//DEPTH FIRST SEARCH
 {	
 	stack <int> S;
@@ -85,8 +81,7 @@ list <int> DFS(MyGraph *G, Vertice *V)			//DEPTH FIRST SEARCH
 		if (find(visited.begin(), visited.end(), u) == visited.end())			// if u has not been visited
 		{
 			visited.emplace_back(u);				// append u to visited
-			//for (int i = 0; i < G->n; i++)		// For each element of edge matrix
-			//{
+			
 			for (int j = G->n; j >0 ; j--)
 				{
 					if (V->edges[u][j])			// we start from j = n because its a stack, so it will alway start from the top
@@ -96,11 +91,7 @@ list <int> DFS(MyGraph *G, Vertice *V)			//DEPTH FIRST SEARCH
 						S.push(j);							// I have to push the value of the vertice wich is edged , push J, value of the vertice
 					}
 				}
-			//}
-		}
-
-		
-		
+		}	
 	}
 
 	return visited;
@@ -120,18 +111,14 @@ list <int> BFS(MyGraph *G, Vertice *V)			//BREADTH FIRST SEARCH
 		 if (find(visited.begin(), visited.end(), u) == visited.end())
 		 {
 			 visited.push_back(u);
-			 //for (int i = 0; i < G->n; i++)		
-			//{
+			 
 				 for (int j = 0; j < G->n; j++)
 				 {
 					 if (V->edges[u][j])						// it is a queue so the last element will be display in first 
 					 {
 						 Q.push(j);				
 					 }
-				 }
-			// }
-			
-			 
+				 }				 
 		 }
 	}
 	return visited;
@@ -155,14 +142,7 @@ int main()
 	Vertice *V10 = new Vertice(10);
 
 	V1->InitializationOfEdge(); 
-	/*V2->InitializationOfEdge();
-	V3->InitializationOfEdge();
-	V4->InitializationOfEdge();
-	V5->InitializationOfEdge();
-	V6->InitializationOfEdge();
-	V7->InitializationOfEdge();
-	V8->InitializationOfEdge();*/
-
+	
 	G->addVertex(1);
 	G->addVertex(2);
 	G->addVertex(3);
@@ -171,8 +151,8 @@ int main()
 	G->addVertex(6);
 	G->addVertex(7);
 	G->addVertex(8);
-	G->addVertex(9);
-	G->addVertex(10);
+	//G->addVertex(9);
+	//G->addVertex(10);
 	
 	V1->addEdges(V1, V2);
 	V1->addEdges(V1, V3);
@@ -198,7 +178,6 @@ int main()
 		cout << *iterator << " ";
 
 	//ofstream outputfile ("Data.txt");
-	//outputfile << "hey";
 	//outputfile.open("Data.txt");
 	
 
@@ -210,9 +189,9 @@ int main()
 	outputfile << "DFS" << std::endl;
 	for (iterator = resultDFS.begin() = resultDFS.begin(); iterator != resultDFS.end(); iterator++)
 		outputfile << *iterator << " ";
-		*/
+		*/	
 		
-	fstream outputfile("data.txt"); 
+	ofstream outputfile("Data.txt"); 
 	if (outputfile.is_open())
 	{
 		
@@ -231,3 +210,25 @@ int main()
     return 0;
 }
 
+/*
+	class Vertice
+		value
+		edges[][] <- false
+
+		Vertice(value)
+			this.value <- value
+
+		addEdges(V1,V2)
+		edges[V1.value][V2.value] <-true;
+		edges[V2.value][V1.value] <-true;
+
+*	class MyGraph
+			ArrayVertices <- []
+			n <- number of vertices
+			
+			MyGraph(n)
+				this.n <- n
+
+			addVertice(VerticeValue)
+				push(VerticeValue);
+*/
