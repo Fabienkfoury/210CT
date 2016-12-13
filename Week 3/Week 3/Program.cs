@@ -10,14 +10,14 @@ namespace Week_3
     {
         static void Main(string[] args)
         {
-            //Reverse("je suis fou");
-            //Console.Write(Prime(17));
-            string word="beautiful";
-            string [] input=new string[word.Length-1];
+           //Reverse("This is awesome");
+           // Console.Write(Prime(5));
+            string word ="beautiful";
+            string [] input = new string[word.Length-1];
             int i=0;
             int j = 0;
 
-            //Voyel(word, input, i,j);
+           //Voyel(word, input, i,j);
             Console.ReadLine();
         }
 
@@ -75,7 +75,7 @@ namespace Week_3
                             }
                     }
                      
-                Console.WriteLine("There are " + WordCompteur +" words"); // (1)
+                 
 
                 for (int i = WordCompteur; i >= 0; i--)                      // (N)
                 {
@@ -99,17 +99,17 @@ namespace Week_3
          
         static bool Voyel(string Word,string []input,int i,int j)
         {
-            if(i==Word.Length)
+            if(i == Word.Length)
             {
                 return true;
             }
-            if(Word[i]=='a' || Word[i]=='e' || Word[i]=='i' || Word[i]=='o' || Word[i]=='u' || Word[i]=='y')
+            if(Word[i] =='a' || Word[i] =='e' || Word[i] =='i' || Word[i] =='o' || Word[i] =='u' || Word[i] =='y')
             {
                 i = i + 1;
             }
             else
             {
-               input[j]=input[j] + Word[i];
+               input[j] = input[j] + Word[i];
                Console.Write(input[j]);
                 i++;
                j++;

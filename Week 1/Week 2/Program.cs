@@ -12,7 +12,7 @@ namespace Week_2
         {
             //Task1();
             //ShuffleArray();
-           //Trailling0();
+           Trailling0();
             //Fact2();
             //Alien();
             int DimI = 3;
@@ -100,7 +100,7 @@ namespace Week_2
 
         static int Fact(int number) 
         {
-            if(number==0 )
+            if(number == 0 )
             {
                 return 1;
             }
@@ -138,13 +138,13 @@ namespace Week_2
             int number = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(Fact(number));
 
-            int result=Fact(number);
-            int output=0;
+            int result = Fact(number);
+            int output = 0;
 
-            while(result %5 ==0)
+            while(result %5 == 0)
             {
-                result=result/5;
-                output+=1;
+                result = result/5;
+                output += 1;
             }
             Console.Write("Output :" + output);
         }

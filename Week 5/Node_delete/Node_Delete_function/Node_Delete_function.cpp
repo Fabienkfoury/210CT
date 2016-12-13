@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
 	l->insert(l->head, new Node(6));
 	l->insert(l->head, new Node(8));
 	l->display();
-	l->remove(l->find(4));
+	l->remove(l->find(8));
 	l->display();
 
 	delete l;

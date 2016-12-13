@@ -1,4 +1,4 @@
-﻿Build started 30/11/2016 01:46:01.
+﻿Build started 11/12/2016 15:34:22.
      1>Project "C:\Users\Fabien\Documents\Visual Studio 2013\Projects\210CT\Week 7\Unweighted graph\Unweighted graph\Unweighted graph.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\Unweighted graph.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt "Unweighted graph.cpp"
@@ -11,4 +11,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.14
+Time Elapsed 00:00:07.32

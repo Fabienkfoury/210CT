@@ -10,14 +10,17 @@ namespace Week_2_Real
     {
         static void Main(string[] args)
         {
-            //Console.Write(Perfect_Square(16));
+           // Console.Write(Perfect_Square(26));
 
             int a = 2;
             int[,] B = { {1,2 },{1,2} };            
             int[,] C = { {1,1 },{1,2} };
 
-            Matrix_Operations(B, C);
+            //Matrix_Operations(B, C);
             Affichage(Matrix_Operations(B, C));
+
+            // RESULT = {{-1,-1},
+                //       {-1,-3} };
 
             Console.ReadLine();
         }

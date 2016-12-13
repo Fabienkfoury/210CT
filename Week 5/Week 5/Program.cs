@@ -10,7 +10,7 @@ namespace Week_5
     {
         static void Main(string[] args)
         {
-            int[] tab = { 6, 5, 9, 10, 2 , 6, 5, 7 };
+            int[] tab = { 6, 5, 7, 8, 2 , 5, 6, 8 };
             Sub_Sequence(tab);
             
             Console.ReadLine();
@@ -35,17 +35,23 @@ namespace Week_5
                     }
                     start = i;
                 }
-                if (length > longestlength)
+            
+                // whith out this if statement : 
+                // at the end of the array, at the value 8 :  start = 4 , i = 7
+                // length = 7-4 = 3 BUT it is suppose to equal 4 because we have 4 consecutive ascending number
+                // that is why, when i test the end of the array, I do length +1 because an array starts at 0
+                if (i == tab.Length-1)                          // When we are at the end
                 {
-                    longestlength = length;
-                    longestlengthstart = start;
+                    if (tab[i] > tab[i - 1] && (length + 1 > longestlength) )           // if last element is superior to the previous element
+                    {                                                                   // and the sub sequence is the longest
+                        longestlength = length + 1;                                     // +1 because at the end of the loop i = 7 and then lenght has not his right value
+                        longestlengthstart = start;
+
+                    }
+                    
                 }
                 
             }
-            /*Console.WriteLine("Affichage");
-            Console.WriteLine(longestlength);
-            Console.WriteLine(longestlengthstart);
-             **/
 
             for (int i = longestlengthstart; i < longestlength + longestlengthstart; i++)
             {

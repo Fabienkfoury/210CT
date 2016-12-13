@@ -151,8 +151,8 @@ int main()
 	G->addVertex(6);
 	G->addVertex(7);
 	G->addVertex(8);
-	//G->addVertex(9);
-	//G->addVertex(10);
+	G->addVertex(9);
+	
 	
 	V1->addEdges(V1, V2);
 	V1->addEdges(V1, V3);
@@ -176,22 +176,8 @@ int main()
 	std::cout << "DFS" << std::endl;
 	for (iterator = resultDFS.begin() = resultDFS.begin(); iterator != resultDFS.end(); iterator++)
 		cout << *iterator << " ";
-
-	//ofstream outputfile ("Data.txt");
-	//outputfile.open("Data.txt");
 	
-
-	/*outputfile << "BFS" << std::endl;
-	for (iterator = resultBFS.begin() = resultBFS.begin(); iterator != resultBFS.end(); iterator++)
-		outputfile << *iterator << " ";
-
-	outputfile << "" << std::endl;
-	outputfile << "DFS" << std::endl;
-	for (iterator = resultDFS.begin() = resultDFS.begin(); iterator != resultDFS.end(); iterator++)
-		outputfile << *iterator << " ";
-		*/	
-		
-	ofstream outputfile("Data.txt"); 
+	/*ofstream outputfile("Data.txt"); 
 	if (outputfile.is_open())
 	{
 		
@@ -207,6 +193,7 @@ int main()
 	{
 		cout << "File could not be opened." << endl;
 	}
+	*/
     return 0;
 }
 
